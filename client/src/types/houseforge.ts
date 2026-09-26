@@ -1,0 +1,22 @@
+export type Vec3 = [number, number, number];
+export type UnitSystem = "metric" | "imperial";
+export type ViewMode = "plan" | "model" | "elevation" | "section" | "split" | "walkthrough";
+export type FloorDisplayMode = "active" | "all" | "ghosted";
+export type BuildStage = "site" | "planning" | "foundation" | "structure" | "masonry" | "openings" | "roof" | "services" | "finishes" | "interior" | "landscape" | "inspection" | "documentation";
+export type HouseTool = "select" | "move" | "rotate" | "scale" | "wall" | "room" | "foundation" | "column" | "beam" | "slab" | "door" | "window" | "stair" | "roof" | "facade" | "furniture" | "kitchen" | "bathroom" | "lighting" | "tiles" | "decoration" | "mep" | "landscape" | "material" | "paint" | "measure";
+export type ElementKind = "foundation" | "wall" | "column" | "beam" | "slab" | "door" | "window" | "stair" | "roof" | "furniture" | "plumbing" | "electrical" | "hvac" | "landscape" | "finish";
+export type SiteToolKind = "road" | "path" | "parking" | "driveway" | "boundary" | "gate" | "planting" | "pool";
+export type LayerName = "site" | "architecture" | "structure" | "foundation" | "openings" | "roof" | "interior" | "mep" | "landscape" | "dimensions";
+export type PlotShape = "rectangle" | "square" | "irregular";
+export type PlotCorner = { x: number; z: number; };
+
+export type TerrainPoint = { x: number; z: number; elevation: number; };
+export type SiteSettings = { width: number; length: number; road: "north" | "south" | "east" | "west"; north: number; gridSpacing: number; snapEnabled: boolean; workflowMode: "precision" | "creative"; shape: PlotShape; corners: PlotCorner[]; gate: boolean; sky: "clear" | "sunset" | "overcast"; terrain: "level" | "gentle" | "slope"; terrainTool: "raise" | "lower" | "level" | "slope" | "smooth"; terrainPoints?: TerrainPoint[]; sunDirection: number; setbacks: { front: number; rear: number; left: number; right: number }; soil: "medium" | "dense" | "soft"; bearingCapacity: number; groundwater: number; };
+export type Level = { id: string; name: string; elevation: number; floorHeight: number; slabThickness: number; ceilingHeight: number; };
+export type MaterialKey = "rcc" | "concrete" | "brick" | "aac" | "steel" | "wood" | "glass" | "tile" | "marble" | "plaster" | "paint" | "grass" | "asphalt";
+export type HouseElement = { id: string; kind: ElementKind; name: string; levelId: string; position: Vec3; rotation: Vec3; dimensions: Vec3; material: MaterialKey; layer: LayerName; structural: boolean; openingFor?: string; openingOffset?: number; stairToLevelId?: string; doorOpen?: boolean; siteTool?: SiteToolKind; notes?: string; color?: string; roughness?: number; finish?: "matte" | "satin" | "semi-gloss" | "gloss" | "textured"; locked?: boolean; };
+export type Room = { id: string; name: string; levelId: string; x: number; z: number; width: number; length: number; height: number; floorMaterial: MaterialKey; wallFinish: string; };
+export type ProjectAssumptions = { houseType: "Residential" | "Villa" | "Duplex" | "Row House" | "Custom"; structuralSystem: "RCC Frame" | "Load Bearing Masonry" | "Steel Frame" | "Custom"; };
+export type HouseProject = { name: string; description?: string; author?: string; createdAt?: number; units: UnitSystem; site: SiteSettings; assumptions: ProjectAssumptions; levels: Level[]; rooms: Room[]; elements: HouseElement[]; layers: Record<LayerName, { visible: boolean; locked: boolean }>; updatedAt: number; };
+export type QuantityRow = { label: string; quantity: number; unit: string; estimatedCost: number; };
+export type ProjectCheck = { severity: "pass" | "warning" | "error"; title: string; detail: string; };

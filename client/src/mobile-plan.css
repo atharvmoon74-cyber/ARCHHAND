@@ -1,0 +1,32 @@
+@media (max-width: 620px) {
+  .houseforge-app {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hf-workspace {
+    contain: inline-size;
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .plan-view svg {
+    background: transparent !important;
+    outline: 0 !important;
+  }
+
+  .plan-view svg > polygon {
+    fill: rgba(38, 74, 61, 0.78) !important;
+    stroke: #e1bb6d !important;
+    stroke-width: 3 !important;
+  }
+
+  .plan-view svg .plan-room rect {
+    opacity: 0.68 !important;
+  }
+
+  .plan-view svg .plan-element rect {
+    stroke-width: 2 !important;
+  }
+}

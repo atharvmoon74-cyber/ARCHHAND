@@ -1,0 +1,65 @@
+# Project TODO
+
+- [x] Establish a dark cinematic design system, branded top bar, editor panels, responsive layout, and accessible keyboard-visible controls.
+- [x] Add WebGL dependencies and create a modular React Three Fiber scene with grid, architectural lighting, smooth orbit camera, and raycast-based selection.
+- [x] Implement scene object domain models for structural, architectural, infrastructure, and primitive assets, including metadata, dimensions, materials, IDs, and connection points.
+- [x] Implement conventional select, move, rotate, scale, duplicate, deliberate delete, object properties, gizmos, and keyboard shortcuts.
+- [x] Implement configurable grid, vertex, edge, and surface snapping with connection-point previews and valid-connection feedback.
+- [x] Implement measurements for distance, object dimensions, height, width, and angle as non-obtrusive 3D annotations.
+- [x] Implement Free Build, House, Bridge, Tower, and Road modes and create interactive house, bridge, tower, and road demo scenes.
+- [x] Implement bounded undo/redo history, local project save/load, JSON export, duplicate project, and reset scene actions.
+- [x] Implement a dedicated webcam hand-tracking adapter, separate gesture-state machine, gesture smoothing, confidence gates, hysteresis, debounce, visual cursor, and visible tracking diagnostics.
+- [x] Map point, pinch, open palm, two-finger rotate, two-hand scale, deliberate fist-delete confirmation, thumbs-up confirmation, and wave menu gestures to editor interactions without compromising mouse, keyboard, or touch fallback.
+- [x] Implement camera permission failure, unsupported-browser, unavailable-tracking, invalid-structure, and simulation-failure recovery states.
+- [x] Implement a clearly labeled educational structural model covering nodes, members, supports, connectivity, point/distributed/gravity/wind loads, warnings, and limited response estimates.
+- [x] Implement Normal, Deformed, Heatmap, and Load Path views, exaggerated deformation controls, instability explanations, structured test reporting, and a cinematic showcase sequence.
+- [x] Implement first-run onboarding, hand-camera preview, gesture status, camera status, FPS indicator, simulation state, and Atharv Moon / IIT Tirupati branding.
+- [x] Add Vitest coverage for gesture classification, scene persistence/history, snapping/connectivity, and simplified simulation calculations.
+- [x] Verify the running application visually at desktop and mobile breakpoints, inspect logs, resolve critical issues, document practical limitations, checkpoint, and deliver.
+- [x] Replace ARCHHAND branding and remove webcam, gesture, hand-camera, and hand-control concepts across the HOUSEFORGE interface.
+- [x] Create HOUSEFORGE project setup for name, metric/imperial units, site dimensions, north orientation, floor count, house type, and structural-system assumptions.
+- [x] Build a mouse-, keyboard-, and touch-first professional site workspace with plot bounds, buildable setbacks, road and entry context, north arrow, coordinates, and adjustable precision grid.
+- [x] Implement coordinated plan, 3D, elevation, section, and split workspace modes that share editable residential project data.
+- [x] Implement custom floor levels with elevations, floor heights, slab thicknesses, ceiling heights, and editable names.
+- [x] Implement professional residential element workflows for foundations, columns, beams, slabs, wall drawing, rooms, doors/windows, stairs, roof systems, and finishes.
+- [x] Implement room detection/templates, editable room data, materials, interior content, services, landscape elements, and construction-stage progress.
+- [x] Implement educational site/soil assumptions, limited structural checks, quantity estimation, inspection, and project documentation without implying certification.
+- [x] Preserve conventional selection, transforms, snapping, dimensions, undo/redo, save/load/export/reset, accessibility, and responsive interaction.
+- [x] Add focused test coverage, perform desktop and mobile visual verification, document limitations, checkpoint, and deliver HOUSEFORGE.
+- [x] Complete the new-project form with editable units, site dimensions, north orientation, floor count, house type, and structural-system choices.
+- [x] Add road, entry, coordinate, and adjustable grid-precision controls to the site workspace.
+- [x] Add editable level-management controls for level name, elevation, floor height, slab thickness, and ceiling height.
+- [x] Add active door/window opening, stair proportion, roof type, room template, and room boundary-assistance workflows.
+- [x] Restore conventional transform, grid snap, and dimension controls for selected HOUSEFORGE elements.
+- [x] Build a premium HOUSEFORGE landing dashboard with New House, Open Project, Example Houses, Continue Project, and clickable example-house cards.
+- [x] Add a dedicated empty-world site creator supporting rectangular, square, and irregular plot modes, editable plot corners, exact dimensions, plot area, road, driveway, gate, outdoor assets, and a richer terrain/sky environment.
+- [x] Upgrade the left toolbar into expandable professional libraries for walls, floors, roofs, structure, openings, furniture, kitchen, bathroom, lighting, materials, paint, tiles, landscape, decoration, measure, and annotation.
+- [x] Add configurable wall, roof, floor, column, beam, slab, stair, door, and window variants with editable geometry, material, finish, level, and placement properties tied to the unified project model.
+- [x] Add floor navigation with active, all-floor, and ghosted-floor display modes plus duplicate and delete floor actions.
+- [x] Improve direct 2D plan and 3D manipulation so wall, room, geometry, and elevation changes synchronize through the same project data.
+- [x] Add material/paint palettes with custom color input, finish controls, and room-wide paint application.
+- [x] Add dedicated furniture, kitchen, bathroom, lighting, decoration, landscape, and outdoor-property workflows with editable placement and properties.
+- [x] Add a walkthrough presentation mode with movement guidance, daylight/evening controls, views, and project documentation outputs.
+- [x] Add focused tests, desktop/mobile visual verification, limitations documentation, a new checkpoint, and delivery for the enhanced HOUSEFORGE platform.
+- [x] Add dedicated materials, paint, measure, and annotation panels to complete the contextual building-tool workflow.
+- [x] Implement room-wide paint application that updates the shared finish model for all walls surrounding the selected room.
+- [x] Add active, all-floor, and ghosted-floor display controls plus floor duplication and deletion safeguards.
+- [x] Add a dedicated site-entry gate workflow, explicit plot-area readout, and richer terrain/sky presentation to the empty-world site creator.
+- [x] Add a dedicated contextual materials panel alongside paint, measure, and annotation workflows.
+- [x] Add gate configuration, plot-area visibility, and explicit sky-environment controls directly to the new-project site-creator flow.
+- [x] Update enhanced HOUSEFORGE limitations documentation, re-run validation, checkpoint, and deliver the exact reviewed version.
+- [x] Rebrand the application as HOUSEFORGE X and expand the project wizard with description, author, date, floor-to-floor height, terrain, road, sun-direction, and starting-point options.
+- [x] Add Build, Plan, Structure, Interior, Material, Facade, Landscape, Lighting, Walk, and Present workspace modes plus complete precision status indicators.
+- [x] Implement metric and imperial display switching with correct shared-model dimension conversion and an extended multi-resolution grid system.
+- [x] Add site tools for roads, driveways, parking, gates, fences, compound walls, landscape, terrain elevation points, and non-destructive terrain shaping modes.
+- [x] Implement professional smart-snap options, live drawing measurements, numeric wall-length entry, configurable wall library/profiles/parameters, intersection cleanup, and automatic room-boundary detection.
+- [x] Expand editable openings, stairs, roofs, facade, interior rooms, furniture, kitchen, bathroom, lighting, decoration, landscape, and walkthrough/presentation content on the shared project model.
+- [x] Add focused tests, responsive visual verification, limitations updates, checkpoint, and delivery for HOUSEFORGE X.
+- [x] Add an explicit editable project date control to the HOUSEFORGE X wizard and persist it in the shared project model.
+- [x] Complete the HOUSEFORGE X precision status bar with live workspace cursor coordinates, active dimensions, and a performance indicator.
+- [x] Add connected MEP, Analysis, and Construction workspace modes that operate on the existing shared project model rather than separate scenes.
+- [x] Extend the room programme with editable balcony, terrace, garage, utility, laundry, and custom templates while preserving synchronized plan, schedule, and 3D context.
+- [x] Validate the first master-directive increment with focused tests, desktop/mobile review, limitations audit, and a checkpoint.
+- [x] Add relationship-aware host-wall maintenance so openings preserve valid placement when a shared wall changes.
+- [x] Add relationship-aware stair regeneration when linked level height changes, preserving a conceptual riser schedule in the shared model.
+- [x] Add focused relationship tests, visual verification, limitation wording, and a checkpoint for the Omniverse geometry increment.
